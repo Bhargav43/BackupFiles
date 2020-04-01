@@ -5,7 +5,7 @@ import functools
 import re
 import sys
 import TraceFuncCalls as trc
-from ClearScreen import cls
+import ClearScreen
 
 '''
 #Checking a Specific Function is Being Called.
@@ -165,9 +165,9 @@ class Backup:
                 sys.stdout.write('\r'+ ' '*50)
                 sys.stdout.write('\r'+'Backup Successful!!!')
 
-            cls()
-
-        print(f'File(s) has been backed-up successfully with a high-speed of 16 MBPS!\n\nPlease find the backup(s) at following location(s),\nBackup:\t{os.path.join(self.path, newFilename["Gen"])}')
+        ClearScreen.cls()
+        print("Final Report:\n")
+        print(f'\nFile(s) has been backed-up successfully with a high-speed of 16 MBPS!\n\nPlease find the backup(s) at following location(s),\n\nBackup:\t\t\t{os.path.join(self.path, newFilename["Gen"])}')
         if len(newFilename) == 2:
             print(f'Standard Backup:\t{os.path.join(self.path, newFilename["St"])}')
 
@@ -217,10 +217,10 @@ def Analyze(path, Standard):
     leaf_size = 0
     if os.path.isdir(path):
         leaf_size = functools.reduce(lambda x, y : x + y, [os.stat(os.path.join(path, file)).st_size for file in LOF(path)])
-        print('Total Disk Occupied by Directory = ', format_bytes(leaf_size))
+        print('\nTotal Disk Occupied by Directory = ', format_bytes(leaf_size))
     else:
         leaf_size = os.stat(path).st_size
-        print('Total Disk Occupied by File = ', format_bytes(leaf_size))
+        print('\nTotal Disk Occupied by File = ', format_bytes(leaf_size))
 
 
     if local_drive == nonlocal_drive:
@@ -247,7 +247,7 @@ def Analyze(path, Standard):
             elif int((ctotal - cused - leaf_size)/ctotal) < 10:
                 flags['St_W'] = True
 
-    print(f'Estimated ETA on Transfer =\t{format_time(int(leaf_size / (16*1024*1024)))} (Approx.)')
+    print(f'Estimated ETA on Transfer =\t{format_time(int(leaf_size / (16*1024*1024))+10)} (Approx.)')
 
     return leaf_size, flags
 
@@ -309,9 +309,9 @@ def main():
 
     #Backup of Self
     #path = os.path.join(os.getcwd(), __file__)
-    print('\nBackups will be as follows,\nGeneral/Normal Backup: Will be at the location of original file with a timestamp appended to the original filename.\nStandard Backup: It is secondary at standard location (Desktop\Standard Backups) which is optional.')
+    print('\nBackups will be as follows,\n\nGeneral/Normal Backup: Will be at the location of original file with a timestamp appended to the original filename.\nStandard Backup: It is secondary at standard location (Desktop\Standard Backups) which is optional.')
     while True:
-        Standard = str(input('Want a standard backup?[Y/N]\t')).upper()
+        Standard = str(input('\nWant a standard backup?[Y/N]\t')).upper()
         if Standard in ('Y', 'N'):
             break
         print('Invalid Input. Retry.')
@@ -321,7 +321,7 @@ def main():
 
     Warn(Analyze(path, Standard), path, Standard, BackupObj)
 
-    input('Enter any key to exit the console.')
+    input('\nEnter any key to exit the console.')
 
 if __name__ == '__main__':
     main()

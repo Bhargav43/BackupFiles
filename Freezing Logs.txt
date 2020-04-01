@@ -1,0 +1,52 @@
+H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0>pyi-makespec --onefile --hidden-import=os --hidden-import=time --hidden-import=shutil --hidden-import=functools --hidden-import=re --hidden-import=sys --hidden-import=TraceFuncCalls --hidden-import=ClearScreen  --specpath="H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0" BackupFiles.py
+wrote H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0\BackupFiles.spec
+now run pyinstaller.py to build the executable
+
+H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0>pyinstaller --onefile --hidden-import=os --hidden-import=time --hidden-import=shutil --hidden-import=functools --hidden-import=re --hidden-import=sys --hidden-import=TraceFuncCalls --hidden-import=ClearScreen  --specpath="H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0" BackupFiles.py
+316 INFO: PyInstaller: 3.6
+317 INFO: Python: 3.7.0
+320 INFO: Platform: Windows-10-10.0.17134-SP0
+325 INFO: wrote H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0\BackupFiles.spec
+334 INFO: UPX is not available.
+349 INFO: Extending PYTHONPATH with paths
+['H:\\Projects\\Python Related Stuff\\Pyzo Projects\\BackupFiles 1.1.0',
+ 'H:\\Projects\\Python Related Stuff\\Pyzo Projects\\BackupFiles 1.1.0']
+353 INFO: checking Analysis
+356 INFO: Building Analysis because Analysis-00.toc is non existent
+358 INFO: Initializing module dependency graph...
+373 INFO: Caching module graph hooks...
+405 INFO: Analyzing base_library.zip ...
+13462 INFO: Caching module dependency graph...
+14024 INFO: running Analysis Analysis-00.toc
+14036 INFO: Adding Microsoft.Windows.Common-Controls to dependent assemblies of final executable
+  required by e:\installation directory\python\python37-64\python.exe
+14357 INFO: Analyzing H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0\BackupFiles.py
+14430 INFO: Processing module hooks...
+14432 INFO: Loading module hook "hook-encodings.py"...
+14814 INFO: Loading module hook "hook-pydoc.py"...
+14819 INFO: Loading module hook "hook-xml.py"...
+15804 INFO: Looking for ctypes DLLs
+15805 INFO: Analyzing run-time hooks ...
+15833 INFO: Looking for dynamic libraries
+16496 INFO: Looking for eggs
+16496 INFO: Using Python library e:\installation directory\python\python37-64\python37.dll
+16503 INFO: Found binding redirects:
+[]
+16520 INFO: Warnings written to H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0\build\BackupFiles\warn-BackupFiles.txt
+16692 INFO: Graph cross-reference written to H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0\build\BackupFiles\xref-BackupFiles.html
+16730 INFO: checking PYZ
+16731 INFO: Building PYZ because PYZ-00.toc is non existent
+16737 INFO: Building PYZ (ZlibArchive) H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0\build\BackupFiles\PYZ-00.pyz
+18876 INFO: Building PYZ (ZlibArchive) H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0\build\BackupFiles\PYZ-00.pyz completed successfully.
+18937 INFO: checking PKG
+18937 INFO: Building PKG because PKG-00.toc is non existent
+18945 INFO: Building PKG (CArchive) PKG-00.pkg
+25733 INFO: Building PKG (CArchive) PKG-00.pkg completed successfully.
+25742 INFO: Bootloader e:\installation directory\python\python37-64\lib\site-packages\PyInstaller\bootloader\Windows-64bit\run.exe
+25742 INFO: checking EXE
+25744 INFO: Building EXE because EXE-00.toc is non existent
+25746 INFO: Building EXE from EXE-00.toc
+25754 INFO: Appending archive to EXE H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0\dist\BackupFiles.exe
+25840 INFO: Building EXE from EXE-00.toc completed successfully.
+
+H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0>
