@@ -1,4 +1,4 @@
-# BackupFiles 1.1.0 2-Apr-2020
+# :metal::sunglasses::metal: BackupFiles 1.1.0 2-Apr-2020 :metal::sunglasses::metal: 
 
 ## Purpose :bulb:
 Takes the backup of files (small to large) and folders as well, in the local system. This doesn't have the limitation on type of files to backup. This is more or less similar to the version-control feature in Git, except, it is manual and local.
@@ -393,7 +393,7 @@ if __name__ == '__main__':
 Haven't added any comments for understanding. You can go thru, and let me know on mails in case if this is useful for you and require clarification/assistance.
 
 
-##### Some Terms Used
+#### Some Terms Used
 ###### Warnings :warning:
 1. Critical Condition
     - Triggers when the disk space already at max, or will be, after copying the file.
@@ -503,8 +503,8 @@ PyPI `Pyinstaller 3.6` was used for creating the executable in PIP environment. 
 H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0>pyinstaller --onefile --hidden-import=os --hidden-import=time --hidden-import=shutil --hidden-import=functools --hidden-import=re --hidden-import=sys --hidden-import=TraceFuncCalls --hidden-import=ClearScreen  --specpath="H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0" BackupFiles.py
 ```
 
-### Finally, the Working Model
+### Finally, the Working Model :metal:
 
 Click for accessing [BackupFile 1.1.0.exe](https://github.com/Bhargav43/BackupFiles/blob/master/BackupFiles.exe)
 
-Farewell!
+Farewell! :tada::tada:
