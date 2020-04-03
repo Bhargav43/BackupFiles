@@ -4,7 +4,7 @@
 Takes the backup of files (small to large) and folders as well, in the local system. This doesn't have the limitation on type of files to backup. This is more or less similar to the version-control feature in Git, except, it is manual and local.
 The transfer rate is as high as 16 MBPS. Also, it appends a local machine's timestamp to the file/folder name in order to avoid overwriting and keeping a track.
 
-The _Prime Intention_ was to develop a code to reduce my manual work of opening a new file and copying all the existing content onto it every time so as to reconstruct or to perform the trials. The executable works perfectly to my daily usage.
+The _Prime Intention_ was to develop a code to reduce my manual work of opening a new file and copying all the existing content onto it every time before starting reconstruction or performing the trials for enhancements. The [executable](https://github.com/Bhargav43/BackupFiles/blob/master/BackupFiles.exe) works perfectly to my daily usage.
 
 ## Base System's Configurations
 **Sno.** | **Name** | **Version/Config.**
