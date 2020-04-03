@@ -455,7 +455,7 @@ _Executable is aslo called freezing since the file works just great in change of
 
 #### Creating Specifications file :page_facing_up:
 
-```python
+```
 H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0>pyi-makespec --onefile --hidden-import=os --hidden-import=time --hidden-import=shutil --hidden-import=functools --hidden-import=re --hidden-import=sys --hidden-import=TraceFuncCalls --hidden-import=ClearScreen  --specpath="H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0" BackupFiles.py
 ```
 
@@ -499,7 +499,7 @@ exe = EXE(pyz,
 #### Creating Executable :arrow_forward:
 
 PyPI `Pyinstaller 3.6` was used for creating the executable in PIP environment. Command as follows,
-```python
+```
 H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0>pyinstaller --onefile --hidden-import=os --hidden-import=time --hidden-import=shutil --hidden-import=functools --hidden-import=re --hidden-import=sys --hidden-import=TraceFuncCalls --hidden-import=ClearScreen  --specpath="H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0" BackupFiles.py
 ```
 
