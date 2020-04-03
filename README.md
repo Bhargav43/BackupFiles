@@ -393,7 +393,7 @@ if __name__ == '__main__':
 Haven't added any comments for understanding. You can go thru, and let me know on mails in case if this is useful for you and require clarification/assistance.
 
 
-#### Some Terms Used
+#### Some Terms Used :pencil:
 ###### Warnings :warning:
 1. Critical Condition
     - Triggers when the disk space already at max, or will be, after copying the file.
@@ -453,7 +453,7 @@ Enter any key to exit the console.
 ### Executable File :floppy_disk:
 _Executable is aslo called freezing since the file works just great in change of confguration of base system or even after removing python as well. The file be used for distribution with ease and without dependencies. Following is the commands I used for the same. [Click here](https://github.com/Bhargav43/BackupFiles/blob/master/Freezing%20Logs.txt) for logs related to it._
 
-#### Creating Specifications file
+#### Creating Specifications file :page_facing_up:
 
 ```python
 H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0>pyi-makespec --onefile --hidden-import=os --hidden-import=time --hidden-import=shutil --hidden-import=functools --hidden-import=re --hidden-import=sys --hidden-import=TraceFuncCalls --hidden-import=ClearScreen  --specpath="H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0" BackupFiles.py
@@ -496,7 +496,7 @@ exe = EXE(pyz,
           console=True )
 ```
 
-#### Creating Executable
+#### Creating Executable :arrow_forward:
 
 PyPI `Pyinstaller 3.6` was used for creating the executable in PIP environment. Command as follows,
 ```python
@@ -507,4 +507,4 @@ H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0>pyinstaller --o
 
 Click for accessing [BackupFile 1.1.0.exe](https://github.com/Bhargav43/BackupFiles/blob/master/BackupFiles.exe)
 
-Farewell! :tada::tada:
+# Farewell! :tada::tada:
