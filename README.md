@@ -392,6 +392,64 @@ if __name__ == '__main__':
 
 Haven't added any comments for understanding. You can go thru, and let me know on mails in case if this is useful for you and require clarification/assistance.
 
+
+##### Some Terms Used
+###### Warnings :warning:
+1. Critical Condition
+    - Triggers when the disk space already at max, or will be, after copying the file.
+1. Warning Condtion
+    - Triggers when the disk space already at 90% occupancy, or will be, after copying the file.
+
+###### Types of Backups :v:
+1. [General] Backup
+    - The backup at the location of original file, with a timestamp for avoiding overwriting.
+2. Standard Backup
+    - The backup at a standard location, say Desktop\Standard Directory, for secondary backup or track of backups.
+
+###Sample Output
+**Screen 1**
+```
+
+ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ //////////////////////////////
+        ----------|   BackupFiles 1.1.0   |----------
+ ////////////////////////////// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+Please enter full path (Path + File/Folder Name) to backup:
+H:\Projects\Python Related Stuff\Projects with Git\BackupFiles 1.1.0
+
+Backups will be as follows,
+
+General/Normal Backup: Will be at the location of original file with a timestamp appended to the original filename.
+Standard Backup: It is secondary at standard location (Desktop\Standard Backups) which is optional.
+
+Want a standard backup?[Y/N]    y
+
+Total Disk Occupied by Directory =  14.70 Megabytes
+Estimated ETA on Transfer =     10.00 Seconds (Approx.)
+
+WARNING: Disk Space is 90% Full or Will Be, After Taking the Backup of File/Folder 'BackupFiles 1.1.0' of Size 14.70 Megabytes, at The Same Directory H:\Projects\Python Related Stuff\Projects with Git. Yet, We Can Proceed With This Process!!!
+
+WARNING: Disk Space is 90% Full or Will Be, After Taking the Standard Backup of File/Folder 'BackupFiles 1.1.0' of Size 14.70 Megabytes, at The Standard Directory C:\Users\BHARGAV-PC\Desktop\Standard Backups. Yet, We Can Proceed With This Process!!!
+
+
+General Backup Time Count: 20.00 Seconds
+```
+
+**Screen 2**
+```
+Final Report:
+
+
+File(s) has been backed-up successfully with a high-speed of 16 MBPS!
+
+Please find the backup(s) at following location(s),
+
+Backup:                 H:\Projects\Python Related Stuff\Projects with Git\BackupFiles 1.1.0 04APR200119_BACKUP1
+Standard Backup:        H:\Projects\Python Related Stuff\Projects with Git\BackupFiles 1.1.0 04APR200119_STANDARD_BACKUP1
+
+Enter any key to exit the console.
+```
+
 ### Creating Executable
 _Executable is aslo called freezing since the file works just great in change of confguration of base system or even after removing python as well. The file be used for distribution with ease and without dependencies. Following is the commands I used for the same. [Click here](https://github.com/Bhargav43/BackupFiles/blob/master/Freezing%20Logs.txt) for logs related to it._
 
@@ -401,7 +459,7 @@ _Executable is aslo called freezing since the file works just great in change of
 H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0>pyi-makespec --onefile --hidden-import=os --hidden-import=time --hidden-import=shutil --hidden-import=functools --hidden-import=re --hidden-import=sys --hidden-import=TraceFuncCalls --hidden-import=ClearScreen  --specpath="H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0" BackupFiles.py
 ```
 
-This have created [BacupFiles.spec](https://github.com/Bhargav43/BackupFiles/blob/master/BackupFiles.spec) as follows,
+This has created [BacupFiles.spec](https://github.com/Bhargav43/BackupFiles/blob/master/BackupFiles.spec) as follows,
 ```
 # -*- mode: python ; coding: utf-8 -*-
 
@@ -440,7 +498,7 @@ exe = EXE(pyz,
 
 #### Creating Executable
 
-PyPI `Pyinstaler 3.6` was used for creating the executable in PIP environment. Command as follows,
+PyPI `Pyinstaller 3.6` was used for creating the executable in PIP environment. Command as follows,
 ```python
 H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0>pyinstaller --onefile --hidden-import=os --hidden-import=time --hidden-import=shutil --hidden-import=functools --hidden-import=re --hidden-import=sys --hidden-import=TraceFuncCalls --hidden-import=ClearScreen  --specpath="H:\Projects\Python Related Stuff\Pyzo Projects\BackupFiles 1.1.0" BackupFiles.py
 ```
