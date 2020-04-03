@@ -1,12 +1,12 @@
 # BackupFiles 1.1.0 2-Apr-2020
 
-## Purpose
+## Purpose :bulb:
 Takes the backup of files (small to large) and folders as well, in the local system. This doesn't have the limitation on type of files to backup. This is more or less similar to the version-control feature in Git, except, it is manual and local.
 The transfer rate is as high as 16 MBPS. Also, it appends a local machine's timestamp to the file/folder name in order to avoid overwriting and keeping a track.
 
 The _Prime Intention_ was to develop a code to reduce my manual work of opening a new file and copying all the existing content onto it every time before starting reconstruction or performing the trials for enhancements. The [executable](https://github.com/Bhargav43/BackupFiles/blob/master/BackupFiles.exe) works perfectly to my daily usage.
 
-## Base System's Configurations
+## Base System's Configurations :wrench:
 **Sno.** | **Name** | **Version/Config.**
 -------: | :------: | :------------------
 1 | Operating System | Windows 10 x64 bit
@@ -14,7 +14,7 @@ The _Prime Intention_ was to develop a code to reduce my manual work of opening 
 3 | PyInstaller | Version 3.6
 4 | IDE | Pyzo 4.10.2 x64 bit
 
-## Imported Modules
+## Imported Modules :package:
 Sn | **Module** | **Type**
 -: | :--------: | :-------
 1 | os | *Built-in*
@@ -27,8 +27,8 @@ Sn | **Module** | **Type**
 8 | ClearScreen | *Added Script*
 
 
-### Added Scripts
-#### [TraceFuncCalls](https://github.com/Bhargav43/BackupFiles/blob/master/TraceFuncCalls.py)
+### Added Scripts :page_facing_up:
+#### [TraceFuncCalls](https://github.com/Bhargav43/BackupFiles/blob/master/TraceFuncCalls.py) :mag:
 _This is for tracing the all in-built and user-defined functions called throughout the execution of the program. `TraceFunCalls` had no effect on `BackUpFile1.1.0` 's  output, but was used for developement purpose. Logic is as follows:_
 
 ```python
@@ -45,7 +45,7 @@ def tracefunc(frame, event, arg, indent=[0]):
     return tracefunc
 ```
 
-#### [ClearScreen](https://github.com/Bhargav43/BackupFiles/blob/master/ClearScreen.py)
+#### [ClearScreen](https://github.com/Bhargav43/BackupFiles/blob/master/ClearScreen.py) :scissors:
 _Compared with the remaining, this is a simple 2 line script used for clearing-up the console screen. Not heavy, but handy to import rather than checking either types, everytime. `ClearScreen` is used in `BackupFiles1.1.0` to clear the screen just before displaying summery of the execution. As follows:_
 ```python
 def cls():
@@ -58,7 +58,7 @@ def cls():
 ```
 
 
-## BackupFiles 1.1.0.py
+## BackupFiles 1.1.0.py :computer:
 
 ```python
 import os
@@ -406,7 +406,7 @@ Haven't added any comments for understanding. You can go thru, and let me know o
 2. Standard Backup
     - The backup at a standard location, say Desktop\Standard Directory, for secondary backup or track of backups.
 
-###Sample Output
+### Sample Output :bar_chart:
 **Screen 1**
 ```
 
@@ -450,7 +450,7 @@ Standard Backup:        H:\Projects\Python Related Stuff\Projects with Git\Backu
 Enter any key to exit the console.
 ```
 
-### Creating Executable
+### Executable File :floppy_disk:
 _Executable is aslo called freezing since the file works just great in change of confguration of base system or even after removing python as well. The file be used for distribution with ease and without dependencies. Following is the commands I used for the same. [Click here](https://github.com/Bhargav43/BackupFiles/blob/master/Freezing%20Logs.txt) for logs related to it._
 
 #### Creating Specifications file
