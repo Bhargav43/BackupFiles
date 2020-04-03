@@ -11,20 +11,22 @@ For taking the backups of (small to large) files and folders in the local system
 3 | PyInstaller | Version 3.6
 4 | IDE | Pyzo 4.10.2 x64 bit
 
-## Hidden Modules
-* os *[Built-in]*
-* time *[Built-in]*
-* shutil *[Built-in]*
-* functools *[Built-in]*
-* re *[Built-in]*
-* sys *[Built-in]*
-* TraceFuncCalls *[Added Script]*
-* ClearScreen *[Added Script]*
+## Imported Modules
+Sn | **Module** | **Type**
+-: | :--------: | :-------
+1 | os | *Built-in*
+2 | time | *Built-in*
+3 | shutil | *Built-in*
+4 | functools | *Built-in*
+5 | re | *Built-in*
+6 | sys | *Built-in*
+7 | TraceFuncCalls | *Added Script*
+8 | ClearScreen | *Added Script*
 
 
 ### Added Scripts
 #### TraceFuncCalls
-
+_This is for tracing the all in-built and user-defined functions called throughout the execution of the program. `TraceFunCalls` had no effect on `BackUpFile1.1.0` 's  output, but was used for developement purpose. Logic is as follows:_
 
 ```python
 def tracefunc(frame, event, arg, indent=[0]):
