@@ -1,4 +1,4 @@
-# :metal::sunglasses::metal: BackupFiles 1.1.0 2-Apr-2020 :metal::sunglasses::metal: 
+# :metal::sunglasses::metal: BackupFiles 1.1.0 :metal::sunglasses::metal: 
 
 ## Purpose :bulb:
 Takes the backup of files (small to large) and folders as well, in the local system. This doesn't have the limitation on type of files to backup. This is more or less similar to the version-control feature in Git, except, it is manual and local.
