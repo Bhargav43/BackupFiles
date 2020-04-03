@@ -24,8 +24,9 @@ For taking the backups of (small to large) files and folders in the local system
 
 ### Added Scripts
 #### TraceFuncCalls
-> _This is for tracing the all in-built and user-defined functions called throughout the execution of the program. TraceFunCalls had no effect on BackUpFile1.1.0's  output, but was used for developement purpose._
 
+
+```python
 def tracefunc(frame, event, arg, indent=[0]):
     keywords = [i.strip() for i in keyword.split(',')]
     for key in keywords:
@@ -37,3 +38,4 @@ def tracefunc(frame, event, arg, indent=[0]):
                 print("<" + "-" * indent[0], "exit function", frame.f_code.co_name)
                 indent[0] -= 2
     return tracefunc
+```
