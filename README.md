@@ -25,7 +25,7 @@ Sn | **Module** | **Type**
 
 
 ### Added Scripts
-#### TraceFuncCalls
+#### [TraceFuncCalls](https://github.com/Bhargav43/BackupFiles/blob/master/TraceFuncCalls.py)
 _This is for tracing the all in-built and user-defined functions called throughout the execution of the program. `TraceFunCalls` had no effect on `BackUpFile1.1.0` 's  output, but was used for developement purpose. Logic is as follows:_
 
 ```python
@@ -40,4 +40,16 @@ def tracefunc(frame, event, arg, indent=[0]):
                 print("<" + "-" * indent[0], "exit function", frame.f_code.co_name)
                 indent[0] -= 2
     return tracefunc
+```
+
+#### [ClearScreen](https://github.com/Bhargav43/BackupFiles/blob/master/ClearScreen.py)
+_Compared to remaining, this is a simple 2 line script used for clearing-up the console screen. Not heavy, but handy to import rather than checking either types, everytime. `ClearScreen` is used in `BackupFiles1.1.0` to clear the screen just before displaying summery of the execution. As follows:_
+```python
+def cls():
+    #Step 1
+    clear = lambda: os.system('cls')
+    clear()
+
+    #Step 2
+    os.system('cls')
 ```
