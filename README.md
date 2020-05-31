@@ -450,8 +450,8 @@ Standard Backup:        H:\Projects\Python Related Stuff\Projects with Git\Backu
 Enter any key to exit the console.
 ```
 
-### Executable File :floppy_disk:
-_Executable is aslo called freezing since the file works just great in change of confguration of base system or even after removing python as well. The file be used for distribution with ease and without dependencies. Following is the commands I used for the same. [Click here](https://github.com/Bhargav43/BackupFiles/blob/master/Freezing%20Logs.txt) for logs related to it._
+### [Executable File](https://github.com/Bhargav43/BackupFiles/blob/master/BackupFiles.exe) :floppy_disk:
+_Executable (also called freezing) for using in change of confguration of base system or in absence of python. The file be used for distribution with ease and without dependencies. Following is the commands I used for the same. [Click here](https://github.com/Bhargav43/BackupFiles/blob/master/Freezing%20Logs.txt) for logs related to it._
 
 #### Creating Specifications file :page_facing_up:
 
