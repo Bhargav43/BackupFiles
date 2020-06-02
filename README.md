@@ -4,7 +4,7 @@
 Takes the backup of files (small to large) and folders as well, in the local system. This doesn't have the limitation on type of files to backup. This is more or less similar to the version-control feature in Git, except, it is manual and local.
 The transfer rate is as high as 16 MBPS. Also, it appends a local machine's timestamp to the file/folder name in order to avoid overwriting and keeping a track.
 
-The _Prime Intention_ was to develop a code to reduce my manual work of opening a new file and copying all the existing content onto it every time before starting reconstruction or performing the trials for enhancements. The [executable](https://github.com/Bhargav43/BackupFiles/blob/master/BackupFiles.exe) works perfectly to my daily usage.
+The _Prime Intention_ is to develop a code to reduce my manual work of opening a new file and copying all the existing content onto it every time before starting reconstruction or performing the trials for enhancements. The [executable](https://github.com/Bhargav43/BackupFiles/blob/master/BackupFiles.exe) works perfectly to my daily usage.
 
 ## Base System's Configurations :wrench:
 **Sno.** | **Name** | **Version/Config.**
@@ -13,6 +13,8 @@ The _Prime Intention_ was to develop a code to reduce my manual work of opening 
 2 | Python | Version 3.7.0 x64 bit
 3 | PyInstaller | Version 3.6
 4 | IDE | Pyzo 4.10.2 x64 bit
+
+_Recommendation: Try using [`executable`](https://github.com/Bhargav43/BackupFiles/blob/master/BackupFiles.exe) directly as it doesn't require Python and other dependencies to be present in your Windows PC. Executable is mostly made stand-alone._ 
 
 ## Imported Modules :package:
 Sn | **Module** | **Type**
